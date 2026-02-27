@@ -1,262 +1,1993 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Harrison's Data Scientist Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gogo Harrison — Data Scientist & ML Engineer</title>
+<meta name="description" content="Data Scientist & ML Engineer with 3+ years delivering measurable business outcomes through predictive modeling, analytics engineering, and decision intelligence systems.">
+<meta name="keywords" content="Data Scientist, Machine Learning Engineer, Data Analyst, Nigeria, Python, SQL, Power BI">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Gogo Harrison's Data Science Portfolio<br />
-						</h1>
-						<p>Data Scientist skilled in Microsoft Excel, SQL, Tableau, Python, and Machine Learning <a href="https://linkedin.com/in/gogo-harrison/">@Gogo Harrison</a>
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<style>
+  /* ─── DESIGN TOKENS ────────────────────────────── */
+  :root {
+    --bg:        #080c14;
+    --bg-card:   #0d1320;
+    --bg-card2:  #111827;
+    --border:    rgba(255,255,255,0.07);
+    --accent:    #f0b429;
+    --accent2:   #e67e22;
+    --text:      #e8eaf0;
+    --muted:     #8892a4;
+    --radius:    14px;
+    --font-head: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">major projects</a>
-					</header>
+  /* ─── hover zoom ────────────────────────────── */ 
+  .project-card:hover .project-thumb video {
+    transform: scale(1.05);
+    filter: brightness(1) saturate(1.05);
+  }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+  /* ─── RESET & BASE ──────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
 
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/gogo-harrison" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/GogoHarry" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
 
-				<!-- Main -->
-					<div id="main">
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-								
-									<h2><a href="https://github.com/GogoHarry/product-review-sentiment-analysis">Product Review Sentiment Prediction System<br /></a></h2>
-								</header>
-								<video class="image fit" controls>
-									<source src="images/Sentiment.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
-								<p>In this project, I developed a comprehensive sentiment analysis solution capable of extracting, preprocessing, and analyzing customer reviews to uncover actionable insights. This solution enables business stakeholders to make data-driven decisions, driving improved customer experience and satisfaction.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/product-review-sentiment-analysis" class="button">View Project</a></li>
-								</ul>
-							</article>
+  /* ─── SCROLLBAR ─────────────────────────────────── */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 10px; }
 
-						<!-- Posts -->
-							<section class="posts">
-							<article>
-								<header>
-										
-										<h2><a href="https://github.com/GogoHarry/Loan-Prediction-System">Loan Approval Prediction System<br /></a></h2>
-								</header>
-								<video class="image fit" controls>
-									<source src="images/loan.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
-								<p>In this project, I crafted a powerful predictive model that accurately forecasts loan application approval status based on customer details. By harnessing the power of supervised learning on historical data, this innovative system delivers reliable predictions, transforming it into an essential decision-support tool for lenders.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Loan-Prediction-System" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-										
-										<h2><a href="https://github.com/GogoHarry/sms-spam-detection">Spam SMS/Email Detection Model<br /></a></h2>
-								</header>
-								<video class="image fit" controls>
-									<source src="images/sms.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
-								<p>In this project, I engineered a powerful SMS spam detection model designed to accurately classify messages as either legitimate or spam. Utilizing advanced Natural Language Processing (NLP) techniques and the Naive Bayes algorithm, I analyzed a dataset of 5,574 labeled SMS messages ('ham' or 'spam'). This project contributes to the development of effective spam filtering solutions, enhancing user experience by mitigating the impact of unsolicited messages.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/sms-spam-detection" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>				
-									<h2><a href="https://github.com/GogoHarry/Heart-Disease-Prediction">Heart Disease Prediction<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Heart-Disease-Prediction" class="image fit"><img src="images\heart.jpeg" alt="" /></a>
-								<p>In this project, I developed a machine learning model to predict the likelihood of heart disease in patients based on specific health-related features. The project involved data preprocessing, model training, and the evaluation of multiple machine learning algorithms to identify the best-performing model.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Heart-Disease-Prediction" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									
-									<h2><a href="https://github.com/GogoHarry/Customer-Segmentation-Using-K-Means-Clustering">Customer Segmentation Using K-Means Clustering<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Customer-Segmentation-Using-K-Means-Clustering" class="image fit"><img src="images/segmentation.JPG" alt="" /></a>
-								<p>Leveraging the K-Means Clustering Algorithm, I conducted customer segmentation to uncover five distinct customer groups based on annual income and spending behavior. The optimal number of clusters was determined using the elbow method, and the clustering performance was validated with the silhouette score.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Customer-Segmentation-Using-K-Means-Clustering" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>				
-									<h2><a href="https://github.com/GogoHarry/Customer-Churn-Prediction">Customer Churn Prediction<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Customer-Churn-Prediction" class="image fit"><img src="images\churn.png" alt="" /></a>
-								<p>In this project, I analyzed customer churn data for a telecom firm and developed machine learning models to predict customer churn. The model identifies key indicators of churn and suggests effective retention strategies that the company can implement.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Customer-Churn-Prediction" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-									
-									<h2><a href="https://github.com/GogoHarry/Monthly-Income-Prediction">Monthly Income Prediction<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Monthly-Income-Prediction" class="image fit"><img src="images\income.jpeg" alt="" /></a>
-								<p>In this project, I developed a predictive model to estimate employee monthly income based on factors like age, education, and job role. Utilizing Linear Regression, the model’s performance was rigorously evaluated through metrics such as MAE, MSE, RMSE, and R-squared. To enhance accuracy, I also performed hyperparameter tuning with GradientBoostingRegressor using GridSearchCV.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Monthly-Income-Prediction" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>				
-									<h2><a href="https://github.com/GogoHarry/Employee-Attrition-Prediction">Employee Attrition Prediction<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Employee-Attrition-Prediction" class="image fit"><img src="images\attrition.jpg" alt="" /></a>
-								<p>In this project, I developed a predictive model for employee attrition using logistic regression. This model accurately forecasts the likelihood of an employee leaving the company by analyzing key factors such as job satisfaction, work-life balance, and demographic data, providing valuable insights to improve employee retention strategies.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Employee-Attrition-Prediction" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>				
-									<h2><a href="https://github.com/GogoHarry/E-Commerce-Sales-Analysis">Sales Data Analysis Using Tableau<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/E-Commerce-Sales-Analysis" class="image fit"><img src="images\ecommerce.jpg" alt="" /></a>
-								<p>In this project, I conducted a comprehensive analysis of e-commerce sales data to uncover key performance insights for the past year. By identifying trends and patterns, I provided actionable, data-driven recommendations to enhance the company's sales strategy and overall performance.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/E-Commerce-Sales-Analysis" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-										
-									<h2><a href="https://github.com/GogoHarry/Sales-Data-Analysis-Using-Python">Sales Data Analysis in Python<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Sales-Data-Analysis-Using-Python" class="image fit"><img src="images\sales.jpg" alt="" /></a>
-								<p>In this project, I leveraged historical sales data from XYZ Company to uncover the critical drivers behind sales performance. Through in-depth analysis, I delivered key insights and actionable strategies that significantly boost revenue and profitability.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Sales-Data-Analysis-Using-Python" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-										
-									<h2><a href="https://github.com/GogoHarry/California-House-Price-Prediction">California Housing Market Insights & Predictive Modeling.<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/California-House-Price-Prediction" class="image fit"><img src="images\house.jpg" alt="" /></a>
-								<p>In this project, I developed a robust regression model to accurately predict California house prices by analyzing key demographic and geographical factors. The model reveals how variables such as median income, house age, and proximity to the ocean drive housing prices across diverse regions in California..</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/California-House-Price-Prediction" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-										
-									<h2><a href="https://github.com/GogoHarry/Suicide-Analysis">Global Suicide Rate Analysis<br />
-									</h2>
-								</header>
-								<a href="https://public.tableau.com/app/profile/gogo.harrison/viz/SuicideRateDashboard_17027346053950/SuicideRateAnalysisDashboard?publish=yes" class="image fit"><img src="images/suicide.png" alt="" /></a>
-								<p>In this project, I embarked on an in-depth analysis and visualization project using Tableau, diving into complex suicide datasets to reveal hidden patterns, correlations, and trends. The powerful insights gained from this project are poised to drive evidence-based public health strategies and interventions, making a significant impact on global mental health initiatives.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Suicide-Analysis" class="button">View Project</a></li>
-								</ul>
-							</article>
-							<article>
-								<header>
-										
-									<h2><a href="https://github.com/GogoHarry/Impact-of-Energy-Drinks-on-Blood-Pressure">Impact of Energy Drinks on Blood Pressure<br />
-									</h2>
-								</header>
-								<a href="https://github.com/GogoHarry/Impact-of-Energy-Drinks-on-Blood-Pressure" class="image fit"><img src="images\redbull.png" alt="" /></a>
-								<p>In this project, I leveraged data on Redbull energy drinks to uncover the startling effects of energy drinks on blood pressure. By diving deep into the numbers, I revealed critical insights that highlight the health implications of these popular beverages.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/GogoHarry/Impact-of-Energy-Drinks-on-Blood-Pressure" class="button">View Project</a></li>
-								</ul>
-							</article>
-						
-								
+  /* ─── NOISE TEXTURE OVERLAY ─────────────────────── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
 
-					</div>
+  /* ─── GRID BACKGROUND ───────────────────────────── */
+  .grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(240,180,41,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(240,180,41,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
 
-				<!-- Footer -->
-					<footer id="footer">
+  /* ─── GLOW ORBS ─────────────────────────────────── */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+    opacity: 0.15;
+  }
+  .orb-1 { width: 600px; height: 600px; background: var(--accent); top: -200px; right: -100px; }
+  .orb-2 { width: 400px; height: 400px; background: #3b82f6; bottom: 100px; left: -150px; }
 
-						<section class="split contact">
-							<section class="alt">
-								<h3>Location</h3>
-								<p><br />
-								Abuja, Nigeria</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+234) 706-076-4650</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">gogoharrison66@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/gogo-harrison" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/GogoHarry" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+  /* ─── TYPOGRAPHY ────────────────────────────────── */
+  h1, h2, h3, h4, h5 { font-family: var(--font-head); font-weight: 700; line-height: 1.2; }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 28px;
+    height: 2px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
 
-			</div>
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    color: var(--text);
+  }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    max-width: 580px;
+    line-height: 1.8;
+  }
 
-	</body>
+  /* ─── LAYOUT ────────────────────────────────────── */
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  .section { padding: 7rem 0; position: relative; }
+
+  /* ─── NAV ───────────────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    background: rgba(8,12,20,0.75);
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition);
+  }
+
+  .nav-logo {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 1.25rem;
+    color: var(--text);
+  }
+  .nav-logo span { color: var(--accent); }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--muted);
+    transition: color var(--transition);
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background: var(--accent);
+    transition: width var(--transition);
+  }
+  .nav-links a:hover { color: var(--text); }
+  .nav-links a:hover::after { width: 100%; }
+
+  .nav-cta {
+    background: var(--accent);
+    color: #000 !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    transition: background var(--transition) !important;
+  }
+  .nav-cta:hover { background: #fbbf24 !important; }
+  .nav-cta::after { display: none !important; }
+
+  /* Hamburger */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: var(--transition);
+  }
+
+  /* ─── HERO ──────────────────────────────────────── */
+  #hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5rem;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(240,180,41,0.1);
+    border: 1px solid rgba(240,180,41,0.25);
+    border-radius: 100px;
+    padding: 0.45rem 1rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 2rem;
+    animation: fadeSlideDown 0.8s ease both;
+  }
+  .hero-badge .dot {
+    width: 7px; height: 7px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  .hero-title {
+    font-size: clamp(2.8rem, 6.5vw, 5rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    animation: fadeSlideDown 0.8s ease 0.1s both;
+  }
+  .hero-title .line { display: block; }
+  .hero-title .accent { color: var(--accent); }
+  .hero-title .outline {
+    -webkit-text-stroke: 1.5px rgba(240,180,41,0.4);
+    color: transparent;
+  }
+
+  .hero-desc {
+    font-size: 1.125rem;
+    color: var(--muted);
+    line-height: 1.85;
+    max-width: 620px;
+    margin-bottom: 2.5rem;
+    animation: fadeSlideDown 0.8s ease 0.2s both;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    animation: fadeSlideDown 0.8s ease 0.3s both;
+  }
+  .stat-item { display: flex; flex-direction: column; }
+  .stat-num {
+    font-family: var(--font-head);
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: var(--text);
+    line-height: 1;
+  }
+  .stat-num span { color: var(--accent); }
+  .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 0.25rem; letter-spacing: 0.04em; }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    animation: fadeSlideDown 0.8s ease 0.4s both;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent);
+    color: #000;
+    font-weight: 700;
+    font-family: var(--font-head);
+    font-size: 0.9rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 8px;
+    transition: var(--transition);
+    letter-spacing: 0.01em;
+  }
+  .btn-primary:hover { background: #fbbf24; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,180,41,0.35); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.85rem 1.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+  }
+  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    animation: bounce 2s infinite;
+    z-index: 2;
+  }
+  .hero-scroll i { font-size: 1rem; color: var(--accent); }
+
+  /* ─── TICKER / MARQUEE ──────────────────────────── */
+  .ticker-wrap {
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 0;
+    background: rgba(240,180,41,0.03);
+  }
+  .ticker {
+    display: flex;
+    gap: 3rem;
+    animation: ticker 30s linear infinite;
+    width: max-content;
+  }
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--muted);
+    white-space: nowrap;
+    letter-spacing: 0.05em;
+  }
+  .ticker-item i { color: var(--accent); font-size: 0.7rem; }
+
+  /* ─── ABOUT ─────────────────────────────────────── */
+  #about { background: transparent; }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 5rem;
+    align-items: center;
+  }
+
+  .about-visual {
+    position: relative;
+  }
+  .about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+  }
+
+  .about-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.25rem;
+  }
+  .about-role {
+    font-size: 0.85rem;
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-info-list { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+  .about-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  .about-info-item i { color: var(--accent); width: 16px; text-align: center; }
+  .about-info-item a:hover { color: var(--accent); }
+
+  .about-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .badge {
+    background: rgba(240,180,41,0.08);
+    border: 1px solid rgba(240,180,41,0.2);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.3rem 0.75rem;
+    border-radius: 100px;
+  }
+
+  .about-text h3 { font-size: 1.4rem; margin-bottom: 1rem; }
+
+  .about-text p {
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+    font-size: 0.975rem;
+    line-height: 1.85;
+  }
+
+  .about-text p strong { color: var(--text); font-weight: 500; }
+
+  .philosophy-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 1.25rem 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.8;
+  }
+
+  /* ─── SKILLS ────────────────────────────────────── */
+  #skills { background: var(--bg-card2); }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .skill-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(240,180,41,0.05), transparent);
+    opacity: 0;
+    transition: var(--transition);
+  }
+  .skill-card:hover { border-color: rgba(240,180,41,0.3); transform: translateY(-4px); }
+  .skill-card:hover::after { opacity: 1; }
+
+  .skill-icon {
+    width: 44px; height: 44px;
+    background: rgba(240,180,41,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+
+  .skill-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.75rem; }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .skill-tag {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.75rem;
+    padding: 0.25rem 0.65rem;
+    border-radius: 4px;
+  }
+
+  /* ─── PROJECTS ──────────────────────────────────── */
+  #projects { background: transparent; }
+
+  .projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .project-filters {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-family: var(--font-body);
+    padding: 0.4rem 1rem;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: rgba(240,180,41,0.1);
+    border-color: rgba(240,180,41,0.4);
+    color: var(--accent);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 1.75rem;
+  }
+
+  /* ── Project Card ── */
+  .project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .project-card:hover {
+    border-color: rgba(240,180,41,0.35);
+    transform: translateY(-6px);
+    box-shadow: 0 24px 56px rgba(0,0,0,0.45);
+  }
+
+  /* ── Image Banner ── */
+  .project-thumb {
+    position: relative;
+    width: 100%;
+    height: 188px;
+    overflow: hidden;
+    background: #0a0f1c;
+    flex-shrink: 0;
+  }
+  .project-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.4,0,0.2,1), filter 0.5s ease;
+    filter: brightness(0.88) saturate(0.9);
+  }
+  .project-card:hover .project-thumb img {
+    transform: scale(1.05);
+    filter: brightness(1) saturate(1.05);
+  }
+
+  /* Gradient fade from image into card body */
+  .project-thumb::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 40%,
+      rgba(13,19,32,0.7) 80%,
+      #0d1320 100%
+    );
+    pointer-events: none;
+  }
+
+  /* Accent top bar on hover */
+  .project-thumb::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2.5px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    z-index: 2;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .project-card:hover .project-thumb::before {
+    transform: scaleX(1);
+  }
+
+  /* Number badge */
+  .project-num {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 3;
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--accent);
+    background: rgba(8,12,20,0.75);
+    border: 1px solid rgba(240,180,41,0.25);
+    backdrop-filter: blur(8px);
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── Card Header (below image) ── */
+  .project-header {
+    padding: 1.25rem 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .project-category {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(240,180,41,0.08);
+    border: 1px solid rgba(240,180,41,0.2);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+  }
+
+  .project-links { display: flex; gap: 0.5rem; }
+  .project-link {
+    width: 32px; height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    transition: var(--transition);
+  }
+  .project-link:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── Card Body ── */
+  .project-body {
+    padding: 1.1rem 1.5rem 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .project-card p {
+    font-size: 0.855rem;
+    color: var(--muted);
+    line-height: 1.75;
+    margin-bottom: 1.1rem;
+    flex: 1;
+  }
+
+  .project-metrics {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.1rem;
+  }
+  .metric-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(240,180,41,0.07);
+    border: 1px solid rgba(240,180,41,0.18);
+    color: var(--accent);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.22rem 0.6rem;
+    border-radius: 4px;
+  }
+  .metric-chip i { font-size: 0.62rem; }
+
+  .project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .stack-tag {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.71rem;
+    padding: 0.18rem 0.52rem;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  /* ── View All Button ── */
+  .projects-cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .btn-outline-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(240,180,41,0.4);
+    color: var(--accent);
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.85rem 2rem;
+    border-radius: 8px;
+    transition: var(--transition);
+    background: rgba(240,180,41,0.04);
+    letter-spacing: 0.02em;
+  }
+  .btn-outline-accent:hover {
+    background: rgba(240,180,41,0.1);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(240,180,41,0.15);
+  }
+  .btn-outline-accent i { font-size: 1rem; transition: transform var(--transition); }
+  .btn-outline-accent:hover i { transform: translateX(4px); }
+
+  /* ── Tier Divider Label ── */
+  .tier-label {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0 0.25rem;
+  }
+  .tier-label span {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .tier-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 768px) {
+    .projects-grid { grid-template-columns: 1fr; }
+    .projects-header { flex-direction: column; align-items: flex-start; }
+    .project-thumb { height: 160px; }
+  }
+
+
+  /* ─── EXPERIENCE ────────────────────────────────── */
+  #experience { background: var(--bg-card2); }
+
+  .exp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+
+  .exp-timeline { position: relative; padding-left: 1.5rem; }
+  .exp-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 8px; bottom: 8px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--accent), transparent);
+  }
+
+  .exp-item {
+    position: relative;
+    padding: 0 0 2.5rem 1.5rem;
+  }
+  .exp-item:last-child { padding-bottom: 0; }
+  .exp-item::before {
+    content: '';
+    position: absolute;
+    left: -1.55rem;
+    top: 5px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg-card2);
+    box-shadow: 0 0 0 3px rgba(240,180,41,0.2);
+  }
+
+  .exp-period {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.3rem;
+  }
+
+  .exp-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.15rem;
+  }
+  .exp-company {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .exp-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .exp-list li {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.7;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .exp-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 0.7rem;
+  }
+
+  /* Certs */
+  .cert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    transition: var(--transition);
+  }
+  .cert-card:hover { border-color: rgba(240,180,41,0.3); }
+  .cert-icon {
+    width: 44px; height: 44px;
+    min-width: 44px;
+    background: rgba(240,180,41,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 1.1rem;
+  }
+  .cert-body h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .cert-body p { font-size: 0.82rem; color: var(--muted); }
+  .cert-body .cert-skills {
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .edu-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .edu-icon {
+    width: 44px; height: 44px;
+    min-width: 44px;
+    background: rgba(59,130,246,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #60a5fa;
+    font-size: 1.1rem;
+  }
+  .edu-body h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.2rem; }
+  .edu-body p { font-size: 0.82rem; color: var(--muted); }
+
+  /* ─── CONTACT ───────────────────────────────────── */
+  #contact { background: transparent; }
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact-info h3 { font-size: 2rem; margin-bottom: 1rem; }
+  .contact-info p { color: var(--muted); font-size: 0.975rem; line-height: 1.85; margin-bottom: 2rem; }
+
+  .contact-methods { display: flex; flex-direction: column; gap: 1rem; }
+  .contact-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: var(--transition);
+  }
+  .contact-method:hover { border-color: rgba(240,180,41,0.3); transform: translateX(4px); }
+  .contact-method-icon {
+    width: 40px; height: 40px;
+    min-width: 40px;
+    background: rgba(240,180,41,0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+  }
+  .contact-method-text span { display: block; font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .contact-method-text strong { font-size: 0.9rem; }
+
+  .contact-form {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem;
+  }
+  .contact-form h4 { font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+  .form-group { margin-bottom: 1.25rem; }
+  .form-group label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; }
+  .form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color var(--transition);
+    resize: none;
+  }
+  .form-group input:focus, .form-group textarea:focus {
+    border-color: rgba(240,180,41,0.5);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+  .form-submit {
+    width: 100%;
+    background: var(--accent);
+    color: #000;
+    font-weight: 700;
+    font-family: var(--font-head);
+    font-size: 0.9rem;
+    padding: 0.875rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: var(--transition);
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .form-submit:hover { background: #fbbf24; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(240,180,41,0.3); }
+
+  /* ─── FOOTER ────────────────────────────────────── */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer p { font-size: 0.82rem; color: var(--muted); }
+  .footer-links { display: flex; gap: 1.25rem; }
+  .footer-links a {
+    font-size: 1.1rem;
+    color: var(--muted);
+    transition: color var(--transition);
+  }
+  .footer-links a:hover { color: var(--accent); }
+
+  /* ─── ANIMATIONS ────────────────────────────────── */
+  @keyframes fadeSlideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+  @keyframes bounce {
+    0%,100% { transform: translateX(-50%) translateY(0); }
+    50%      { transform: translateX(-50%) translateY(-8px); }
+  }
+  @keyframes pulse {
+    0%,100% { opacity: 1; }
+    50%      { opacity: 0.4; }
+  }
+  @keyframes reveal {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal { opacity: 0; }
+  .reveal.visible { animation: reveal 0.7s ease forwards; }
+  .reveal-d1 { animation-delay: 0.05s; }
+  .reveal-d2 { animation-delay: 0.12s; }
+  .reveal-d3 { animation-delay: 0.19s; }
+  .reveal-d4 { animation-delay: 0.26s; }
+
+  /* ─── MOBILE ────────────────────────────────────── */
+  @media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--bg);
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      z-index: 99;
+      font-size: 1.5rem;
+    }
+    .nav-toggle { display: flex; z-index: 101; position: relative; }
+
+    .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-ghost { justify-content: center; }
+
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .exp-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .contact-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .hero-title { font-size: 2.5rem; }
+    .section { padding: 5rem 0; }
+    .projects-header { flex-direction: column; align-items: flex-start; }
+  }
+
+  @media (max-width: 480px) {
+    .skills-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ════ NAV ════ -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">My Portfolio<span></span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ════ HERO ════ -->
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="grid-bg"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Available for New Opportunities · Nigeria
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line">Gogo Harrison</span>
+        <span class="line accent">Data Scientist</span>
+        <span class="line outline">& ML Engineer</span>
+      </h1>
+
+      <p class="hero-desc">
+        I build predictive systems, analytical pipelines, and decision intelligence frameworks
+        that transform raw business data into measurable competitive advantage.
+        <strong style="color:var(--text)">3+ years</strong> shipping models that drive revenue, reduce cost, and accelerate growth.
+      </p>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">97<span>%</span></span>
+          <span class="stat-label">Model Accuracy</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">28<span>%</span></span>
+          <span class="stat-label">Conversion Lift</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">25<span>%</span></span>
+          <span class="stat-label">Efficiency Gain</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">9<span>+</span></span>
+          <span class="stat-label">Case Studies</span>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <i class="fas fa-chart-line"></i>
+          View Projects
+        </a>
+        <a href="resume.pdf" target="_blank" class="btn-ghost">
+          <i class="fas fa-file-alt"></i>
+          Download Résumé
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-hidden="true">
+    Scroll to explore
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- ════ TICKER ════ -->
+<div class="ticker-wrap">
+  <div class="ticker" aria-hidden="true">
+    <span class="ticker-item"><i class="fas fa-circle"></i> Python · Pandas · Scikit-learn</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> Machine Learning · Predictive Modeling</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> SQL · PostgreSQL · MySQL</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> Power BI · Tableau · Plotly Dash</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> NLP · Sentiment Analysis</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> Statistical Analysis · Hypothesis Testing</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> ETL Pipelines · Feature Engineering</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> XGBoost · Random Forest · Classification</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item"><i class="fas fa-circle"></i> Python · Pandas · Scikit-learn</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> Machine Learning · Predictive Modeling</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> SQL · PostgreSQL · MySQL</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> Power BI · Tableau · Plotly Dash</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> NLP · Sentiment Analysis</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> Statistical Analysis · Hypothesis Testing</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> ETL Pipelines · Feature Engineering</span>
+    <span class="ticker-item"><i class="fas fa-circle"></i> XGBoost · Random Forest · Classification</span>
+  </div>
+</div>
+
+<!-- ════ ABOUT ════ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Left: identity card -->
+      <div class="about-visual reveal">
+        <div class="about-card">
+
+          <div class="about-avatar-wrap">
+            <img src="images/harrison.jpg" alt="Gogo Harrison" class="about-avatar">
+          </div>
+
+          <div class="about-name">Gogo Harrison</div>
+          <div class="about-role">Data Scientist · ML Engineer · Analytics Specialist</div>
+          <div class="about-divider"></div>
+
+          <ul class="about-info-list">
+            <li class="about-info-item"><i class="fas fa-map-marker-alt"></i> Abuja, Nigeria</li>
+            <li class="about-info-item"><i class="fas fa-envelope"></i>
+              <a href="mailto:gogoharrison66@gmail.com">gogoharrison66@gmail.com</a>
+            </li>
+            <li class="about-info-item"><i class="fas fa-phone"></i> +234 706 076 4650</li>
+            <li class="about-info-item"><i class="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/in/gogo-harrison" target="_blank">linkedin.com/in/gogo-harrison</a>
+            </li>
+            <li class="about-info-item"><i class="fab fa-github"></i>
+              <a href="https://github.com/gogoharrison" target="_blank">github.com/gogoharrison</a>
+            </li>
+          </ul>
+
+          <div class="about-badges">
+            <span class="badge">Open to Remote</span>
+            <span class="badge">Contract / Full-time</span>
+            <span class="badge">3+ Years Exp</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: narrative -->
+      <div class="about-text reveal reveal-d1">
+        <span class="section-label">About Me</span>
+        <h3>I engineer intelligence that moves the needle on business outcomes.</h3>
+
+        <p>
+          I'm a <strong>Data Scientist and Machine Learning Engineer</strong> with 3+ years of hands-on experience
+          building end-to-end analytical systems — from raw data ingestion to production-deployed predictive models.
+          My work spans customer churn prediction, conversion funnel optimization, NLP pipelines, and executive-level BI dashboards.
+        </p>
+
+        <p>
+          What sets me apart is my obsession with <strong>business impact</strong>. Every model I build, every dashboard I design,
+          has a clear downstream metric: revenue gained, cost reduced, or decision speed improved.
+          I don't deliver notebooks — I deliver outcomes.
+        </p>
+
+        <p>
+          Currently building data intelligence systems at <strong>10alytics (Canada)</strong>,
+          where I've achieved 97% model accuracy, driven a 25% improvement in operational efficiency,
+          and partnered with cross-functional teams to translate complex model outputs into executive strategy.
+        </p>
+
+        <div class="philosophy-box">
+          "Data is only valuable when it changes a decision. I build systems where it always does."
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ SKILLS ════ -->
+<section id="skills" class="section">
+  <div class="container">
+    <div style="margin-bottom:3rem" class="reveal">
+      <span class="section-label">Technical Stack</span>
+      <h2 class="section-title">Core Competencies</h2>
+      <p class="section-subtitle">A full-spectrum toolkit built for every stage of the data lifecycle — from ingestion to insight to deployment.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+        <h4>Machine Learning</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">Random Forest</span>
+          <span class="skill-tag">Classification</span>
+          <span class="skill-tag">Regression</span>
+          <span class="skill-tag">Clustering</span>
+          <span class="skill-tag">Feature Engineering</span>
+          <span class="skill-tag">Cross-Validation</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-icon"><i class="fas fa-code"></i></div>
+        <h4>Programming & Data</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">SciPy</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">CTEs</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d3">
+        <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+        <h4>Data Visualization & BI</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Tableau</span>
+          <span class="skill-tag">Plotly Dash</span>
+          <span class="skill-tag">Matplotlib</span>
+          <span class="skill-tag">Seaborn</span>
+          <span class="skill-tag">Excel Dashboards</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d4">
+        <div class="skill-icon"><i class="fas fa-language"></i></div>
+        <h4>NLP & Text Analytics</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">NLTK</span>
+          <span class="skill-tag">TF-IDF</span>
+          <span class="skill-tag">SVM</span>
+          <span class="skill-tag">Sentiment Analysis</span>
+          <span class="skill-tag">Streamlit</span>
+          <span class="skill-tag">Flask</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d1">
+        <div class="skill-icon"><i class="fas fa-database"></i></div>
+        <h4>Analytics Engineering</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">ETL Pipelines</span>
+          <span class="skill-tag">Data Cleaning</span>
+          <span class="skill-tag">Data Modeling</span>
+          <span class="skill-tag">Statistical Inference</span>
+          <span class="skill-tag">Hypothesis Testing</span>
+          <span class="skill-tag">A/B Testing</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-d2">
+        <div class="skill-icon"><i class="fas fa-users-cog"></i></div>
+        <h4>Soft Skills & Methods</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Stakeholder Management</span>
+          <span class="skill-tag">Agile</span>
+          <span class="skill-tag">Cross-Team Collab</span>
+          <span class="skill-tag">Executive Storytelling</span>
+          <span class="skill-tag">Problem Framing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<<!-- ════ PROJECTS ════ -->
+<section id="projects" class="section">
+  <div class="container">
+
+    <div class="projects-header reveal">
+      <div>
+        <span class="section-label">Work</span>
+        <h2 class="section-title">Selected Case Studies</h2>
+        <p class="section-subtitle">8 curated projects across ML, analytics, NLP, and BI — each built for measurable business impact.</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+        <button class="filter-btn" data-filter="viz">Visualization</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+      </div>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- ─── TIER 1: Most Technically Impressive ─────────────── -->
+      <div class="tier-label reveal"><span>Tier 1 · Flagship Projects</span></div>
+
+      <!-- 1 · Brazilian E-Commerce Predictive Intelligence -->
+      <article class="project-card reveal" data-category="ml analytics">
+        <div class="project-thumb">
+          <span class="project-num">01</span>
+          <img
+            src="images/brazilian-ecommerce.png"
+            alt="Brazilian E-Commerce Predictive Intelligence dashboard preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">ML · Geospatial · BI</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/brazilian-ecommerce-analytics" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Brazilian E-Commerce Predictive Intelligence</h4>
+          <p>Built 4 production-grade predictive models (XGBoost, Random Forest) over 1.5M+ records — delivery delay prediction, review score forecasting, churn classification (ROC-AUC: 0.73), and lead conversion scoring. Delivered a 4-tab interactive Dash BI dashboard with 12+ visualizations and identified R$16–19M in annual revenue opportunity.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-crosshairs"></i> ROC-AUC: 0.73</span>
+            <span class="metric-chip"><i class="fas fa-database"></i> 1.5M+ Records</span>
+            <span class="metric-chip"><i class="fas fa-piggy-bank"></i> R$16–19M Potential</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">XGBoost</span>
+            <span class="stack-tag">Scikit-learn</span>
+            <span class="stack-tag">GeoPandas</span>
+            <span class="stack-tag">Plotly Dash</span>
+            <span class="stack-tag">SciPy</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 · E-Commerce Sales Funnel Analysis -->
+      <article class="project-card reveal reveal-d1" data-category="analytics ml">
+        <div class="project-thumb">
+          <span class="project-num">02</span>
+          <img
+            src="images/sales-funnel.png"
+            alt="Sales funnel analysis Sankey diagram preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">Analytics · ML · Dash</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/sales-funnel-analysis" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>E-Commerce Sales Funnel Analysis</h4>
+          <p>Uncovered an expansion funnel model generating 5.4× orders per seller across 7,940 MQLs. Identified a statistically significant 6× conversion multiplier tied to delivery speed (p &lt; 0.0001) and a 201% variability bottleneck in the approval stage — directly informing a targeted process automation strategy.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-arrow-up"></i> 5.4× Expansion Factor</span>
+            <span class="metric-chip"><i class="fas fa-bolt"></i> 6× Conversion Lift</span>
+            <span class="metric-chip"><i class="fas fa-chart-bar"></i> 20–25% CAC Reduction</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">Plotly Dash</span>
+            <span class="stack-tag">SciPy</span>
+            <span class="stack-tag">Hypothesis Testing</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 · Product Review Sentiment Analysis -->
+      <article class="project-card reveal reveal-d2" data-category="nlp ml">
+        <div class="project-thumb">
+          <span class="project-num">03</span>
+          <video
+            src="video/sentiment-demo.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            aria-label="Sentiment analysis web app demo"
+            style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1),filter 0.5s ease;filter:brightness(0.88) saturate(0.9);"
+          ></video>
+        </div>
+        <div class="project-header">
+          <span class="project-category">NLP · ML · Web App</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/sentiment-analysis-system" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Product Review Sentiment Analysis System</h4>
+          <p>Engineered an end-to-end NLP pipeline classifying e-commerce product reviews with 93% accuracy using TF-IDF vectorization and SVM. Deployed a production Streamlit web app for real-time sentiment prediction — cutting manual review analysis time by 20% and providing marketing teams with automated product improvement signals.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-check-circle"></i> 93% Accuracy</span>
+            <span class="metric-chip"><i class="fas fa-clock"></i> 20% Time Saved</span>
+            <span class="metric-chip"><i class="fas fa-globe"></i> Deployed Web App</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">NLTK</span>
+            <span class="stack-tag">TF-IDF</span>
+            <span class="stack-tag">SVM</span>
+            <span class="stack-tag">Streamlit</span>
+            <span class="stack-tag">Flask</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── TIER 2: Breadth & Versatility ───────────────────── -->
+      <div class="tier-label reveal"><span>Tier 2 · Breadth & Domain Range</span></div>
+      <!-- 4 · Marketing Campaign Performance Analysis -->
+      <article class="project-card reveal" data-category="analytics ml">
+        <div class="project-thumb">
+          <span class="project-num">04</span>
+          <img
+            src="images/marketing-campaign.png"
+            alt="Marketing campaign fraud heatmap and RFM segmentation preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">Analytics · RFM · Risk</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/marketing-campaign-performance-analysis" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Marketing Campaign Performance Analysis</h4>
+          <p>Delivered end-to-end marketing intelligence across 55,910 transactions for a plant e-commerce brand. Identified Google Ads as an 80% revenue driver, applied RFM segmentation to surface 6,090 high-potential customers, and flagged a critical 6.5% fraud rate — 5–7× above industry benchmark — projecting $450K in annual savings with targeted fraud mitigation.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-bullhorn"></i> 80% Revenue from 1 Channel</span>
+            <span class="metric-chip"><i class="fas fa-shield-alt"></i> 6.5% Fraud Rate Flagged</span>
+            <span class="metric-chip"><i class="fas fa-piggy-bank"></i> $450K Savings Potential</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">RFM Analysis</span>
+            <span class="stack-tag">Plotly</span>
+            <span class="stack-tag">Seaborn</span>
+            <span class="stack-tag">Risk Assessment</span>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- 5 · Discount Impact & Profitability Study -->
+      <article class="project-card reveal" data-category="analytics viz">
+        <div class="project-thumb">
+          <span class="project-num">05</span>
+          <img
+            src="images/discount-impact.png"
+            alt="Discount impact Power BI dashboard preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">SQL · Power BI · Analytics</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/discount-impact-analysis" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Discount Impact & Profitability Study</h4>
+          <p>Designed complex MySQL CTEs and conditional aggregation to evaluate a 15% discount campaign across 5,000+ transactions. Proved the campaign drove cannibalization among existing customers rather than new acquisition — saving the business from a costly reallocation decision and surfacing that Electronics drove 60%+ of overall margin.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-arrow-up"></i> +15% Profit Increase</span>
+            <span class="metric-chip"><i class="fas fa-exclamation"></i> Cannibalization Proven</span>
+            <span class="metric-chip"><i class="fas fa-microchip"></i> Electronics = 60% Margin</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">SQL</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">CTEs</span>
+            <span class="stack-tag">Power BI</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 · Superstore Sales Intelligence -->
+      <article class="project-card reveal reveal-d1" data-category="analytics viz">
+        <div class="project-thumb">
+          <span class="project-num">06</span>
+          <img
+            src="images/superstore.png"
+            alt="Superstore sales choropleth map and treemap preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">Analytics · Visualization</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/superstore-sales-analysis" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Superstore Sales Intelligence — Multi-Dimensional Analysis</h4>
+          <p>Analyzed 9,994 transactions across 4 years to surface revenue drivers, customer value patterns, and geographic performance gaps. Identified a 51% revenue growth trend, Q4 seasonality at 38% of annual sales, and California as a $457K market leader — delivering a full 7-dimension strategic roadmap with choropleth maps, treemaps, and sunburst charts.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-arrow-up"></i> 51% Revenue Growth</span>
+            <span class="metric-chip"><i class="fas fa-map-marker-alt"></i> $457K Top State</span>
+            <span class="metric-chip"><i class="fas fa-calendar-alt"></i> Q4 = 38% of Sales</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">Plotly</span>
+            <span class="stack-tag">Seaborn</span>
+            <span class="stack-tag">Choropleth</span>
+            <span class="stack-tag">Time Series</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── TIER 3: Supporting Credibility ───────────────────── -->
+      <div class="tier-label reveal"><span>Tier 3 · Supporting Depth</span></div>
+
+            <!-- 7 · Child & Infant Mortality in Africa -->
+      <article class="project-card reveal reveal-d2" data-category="ml analytics">
+        <div class="project-thumb">
+          <span class="project-num">07</span>
+          <img
+            src="images/child-mortality.png"
+            alt="Africa child mortality choropleth map preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">ML · Public Health · Geospatial</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/Tackling-Child-and-Infant-Mortality-in-Africa" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Child & Infant Mortality in Africa — Predictive Modeling</h4>
+          <p>Applied Random Forest classification across multi-source WHO health datasets to identify high-risk regions across 54 African countries. Feature importance analysis confirmed vaccination coverage and maternal health access as the dominant mortality predictors — providing SDG 3-aligned, data-driven intervention priorities for policymakers.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-heartbeat"></i> SDG-3 Aligned</span>
+            <span class="metric-chip"><i class="fas fa-tree"></i> Random Forest</span>
+            <span class="metric-chip"><i class="fas fa-map-marked-alt"></i> 54 Countries</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Scikit-learn</span>
+            <span class="stack-tag">GeoPandas</span>
+            <span class="stack-tag">Seaborn</span>
+            <span class="stack-tag">Random Forest</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 8· Time-Based Cohort Analysis -->
+      <article class="project-card reveal" data-category="analytics">
+        <div class="project-thumb">
+          <span class="project-num">08</span>
+          <img
+            src="images/cohort-analysis.png"
+            alt="Customer retention cohort heatmap preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">Analytics · Python</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/Cohort-Analysis-for-Customer-Retention-in-E-Commerce" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Time-Based Cohort Analysis — Customer Retention</h4>
+          <p>Conducted end-to-end cohort retention analysis for E-Shop Pro across 12 monthly cohorts. Identified critical early churn hotspots in the first 3–4 months post-acquisition, surfaced seasonal retention patterns, and built dual heatmap visualizations tracking retention and churn rates — enabling cohort-specific intervention strategies.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-users"></i> 12 Cohorts Tracked</span>
+            <span class="metric-chip"><i class="fas fa-exclamation-triangle"></i> Early Churn Mapped</span>
+            <span class="metric-chip"><i class="fas fa-snowflake"></i> Seasonal Patterns</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">Seaborn</span>
+            <span class="stack-tag">Matplotlib</span>
+            <span class="stack-tag">Cohort Analysis</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- 9 · Sterling E-Commerce Tableau Dashboard -->
+      <article class="project-card reveal reveal-d1" data-category="viz analytics">
+        <div class="project-thumb">
+          <span class="project-num">09</span>
+          <img
+            src="images/sterling-ecommerce.JPG"
+            alt="Sterling E-Commerce Tableau dashboard preview"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-header">
+          <span class="project-category">Tableau · Excel · BI</span>
+          <div class="project-links">
+            <a href="https://github.com/gogoharrison/E-Commerce-Sales-Analysis" target="_blank" class="project-link" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-body">
+          <h4>Sterling E-Commerce Sales Analysis — Tableau Dashboard</h4>
+          <p>Cleaned and analyzed 283,078 orders across 19 variables in Excel, then built a comprehensive Tableau dashboard spanning customer segmentation, market basket analysis, and time series trends. Discovered Mobiles & Tablets drive 56% of revenue despite 29% of orders, and an 800%+ seasonal revenue surge from February to April.</p>
+          <div class="project-metrics">
+            <span class="metric-chip"><i class="fas fa-shopping-cart"></i> 283K+ Orders</span>
+            <span class="metric-chip"><i class="fas fa-mobile-alt"></i> 56% Revenue Category</span>
+            <span class="metric-chip"><i class="fas fa-arrow-up"></i> 800% Seasonal Surge</span>
+          </div>
+          <div class="project-stack">
+            <span class="stack-tag">Tableau</span>
+            <span class="stack-tag">Microsoft Excel</span>
+            <span class="stack-tag">Customer Segmentation</span>
+            <span class="stack-tag">Market Basket</span>
+            <span class="stack-tag">Time Series</span>
+          </div>
+        </div>
+      </article>
+      
+    </div>
+
+    <!-- View All on GitHub CTA -->
+    <div class="projects-cta reveal">
+      <a href="https://github.com/gogoharrison" target="_blank" class="btn-outline-accent">
+        View All Projects on GitHub
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════ EXPERIENCE ════ -->
+<section id="experience" class="section">
+  <div class="container">
+    <div style="margin-bottom:3.5rem" class="reveal">
+      <span class="section-label">Background</span>
+      <h2 class="section-title">Experience & Credentials</h2>
+    </div>
+
+    <div class="exp-grid">
+
+      <!-- Work Experience -->
+      <div class="reveal">
+        <h3 style="font-size:1.1rem;margin-bottom:2rem;color:var(--muted);font-weight:600;letter-spacing:0.05em;text-transform:uppercase;font-size:0.8rem">Work History</h3>
+        <div class="exp-timeline">
+
+          <div class="exp-item">
+            <div class="exp-period">Nov 2023 – Present</div>
+            <div class="exp-title">Data Scientist (Remote)</div>
+            <div class="exp-company">10alytics · Canada</div>
+            <ul class="exp-list">
+              <li>Built classification & regression models (Scikit-learn) for churn prediction and delivery delay forecasting — achieving <strong style="color:var(--text)">97% model accuracy</strong></li>
+              <li>Engineered automated SQL/Excel data pipelines delivering a <strong style="color:var(--text)">25% improvement</strong> in operational efficiency and reporting speed</li>
+              <li>Applied advanced regression and hypothesis testing — improving forecasting accuracy by 15%</li>
+              <li>Partnered with cross-functional teams to translate model outputs into executive business strategies</li>
+            </ul>
+          </div>
+
+          <div class="exp-item">
+            <div class="exp-period">Jul 2022 – Aug 2023</div>
+            <div class="exp-title">Data Analyst</div>
+            <div class="exp-company">Legend Internet PLC · Nigeria</div>
+            <ul class="exp-list">
+              <li>Analyzed end-to-end sales funnels using SQL & Python — increasing lead-to-conversion rates by <strong style="color:var(--text)">28%</strong></li>
+              <li>Led a data validation initiative reducing entry errors by 25% and improving executive report reliability by 20%</li>
+              <li>Overhauled legacy reporting by implementing automated workflows enabling real-time stakeholder access</li>
+              <li>Managed data collection lifecycles across multiple business units, ensuring alignment with corporate KPIs</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Certs + Education -->
+      <div class="reveal reveal-d1">
+        <h3 style="font-size:0.8rem;margin-bottom:2rem;color:var(--muted);font-weight:600;letter-spacing:0.05em;text-transform:uppercase">Certifications & Education</h3>
+
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+          <div class="cert-body">
+            <h4>Master Data Scientist</h4>
+            <p>10alytics · Canada &nbsp;|&nbsp; April 2024</p>
+            <div class="cert-skills">
+              <span class="badge">Statistical Modeling</span>
+              <span class="badge">Microsoft Excel</span>
+              <span class="badge">Machine Learning</span>
+              <span class="badge">Predictive Analytics</span>
+              <span class="badge">Data Visualization</span>
+              <span class="badge">Computer Vision </span>
+              <span class="badge">SQL</span>
+              <span class="badge">EDA</span>
+              <span class="badge">Python</span>
+              <span class="badge">Tableau</span>
+              <span class="badge">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <h4>Bachelor of Technology — Petroleum Engineering</h4>
+            <p>Rivers State University, Nigeria &nbsp;|&nbsp; Second Class Upper · Sep 2018</p>
+            <p style="margin-top:0.5rem;font-size:0.8rem;color:var(--muted)">
+              Strong quantitative foundation in applied mathematics, thermodynamics, and systems modeling —
+              directly transferable to statistical computing and ML problem-solving.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ════ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-wrapper">
+
+      <div class="contact-info reveal">
+        <span class="section-label">Let's Connect</span>
+        <h3>Ready to turn your data into a competitive edge?</h3>
+        <p>
+          I'm actively seeking Data Science, Machine Learning, and Analytics Engineering roles.
+          If you're looking for someone who ships models that actually move business metrics,
+          let's have a conversation.
+        </p>
+
+        <div class="contact-methods">
+          <a href="mailto:gogoharrison66@gmail.com" class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-method-text">
+              <span>Email</span>
+              <strong>gogoharrison66@gmail.com</strong>
+            </div>
+          </a>
+          <a href="tel:+2347060764650" class="contact-method">
+            <div class="contact-method-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-method-text">
+              <span>Phone</span>
+              <strong>+234 706 076 4650</strong>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/gogo-harrison" target="_blank" class="contact-method">
+            <div class="contact-method-icon"><i class="fab fa-linkedin"></i></div>
+            <div class="contact-method-text">
+              <span>LinkedIn</span>
+              <strong>linkedin.com/in/gogo-harrison</strong>
+            </div>
+          </a>
+          <a href="https://github.com/gogoharrison" target="_blank" class="contact-method">
+            <div class="contact-method-icon"><i class="fab fa-github"></i></div>
+            <div class="contact-method-text">
+              <span>GitHub</span>
+              <strong>github.com/gogoharrison</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="contact-form reveal reveal-d1">
+        <h4>Send a Message</h4>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" placeholder="John" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" placeholder="Doe" autocomplete="family-name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="john@company.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Data Science Opportunity at Acme Corp">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Tell me about the role or project..."></textarea>
+        </div>
+        <button class="form-submit" onclick="handleFormSubmit(this)">
+          <i class="fas fa-paper-plane"></i>
+          Send Message
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <p>© 2026 Gogo Harrison · All rights reserved.</p>
+  <div class="footer-links">
+    <a href="https://github.com/gogoharrison" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="https://linkedin.com/in/gogo-harrison" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:gogoharrison66@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+<script>
+  /* ── Scroll Reveal ── */
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  /* ── Nav Toggle (mobile) ── */
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  /* ── Active Nav Highlight on Scroll ── */
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      if (window.scrollY >= section.offsetTop - 120) {
+        current = section.getAttribute('id');
+      }
+    });
+    navItems.forEach(item => {
+      item.style.color = '';
+      if (item.getAttribute('href') === '#' + current) {
+        item.style.color = 'var(--accent)';
+      }
+    });
+  });
+
+  /* ── Project Filter ── */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projectCards = document.querySelectorAll('.project-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      projectCards.forEach(card => {
+        const cats = card.dataset.category || '';
+        if (filter === 'all' || cats.includes(filter)) {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  /* ── Form Submit Handler ── */
+  function handleFormSubmit(btn) {
+    const fname = document.getElementById('fname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    if (!fname || !email || !message) {
+      btn.innerHTML = '<i class="fas fa-exclamation-circle"></i> Please fill required fields';
+      btn.style.background = '#ef4444';
+      setTimeout(() => {
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        btn.style.background = '';
+      }, 2500);
+      return;
+    }
+    btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+    btn.style.background = '#10b981';
+    setTimeout(() => {
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      btn.style.background = '';
+      ['fname','lname','email','subject','message'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+    }, 3000);
+  }
+</script>
+
+</body>
 </html>
+
+
